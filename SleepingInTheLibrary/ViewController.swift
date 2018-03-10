@@ -135,7 +135,6 @@ private func escapedParameters(_ parameters: [String:AnyObject]) -> String {
             
             // append it
             keyValuePairs.append(key + "=" + "\(escapedValue!)")
-            
         }
         
         return "?\(keyValuePairs.joined(separator: "&"))"
